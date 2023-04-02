@@ -3,11 +3,16 @@ Linux driver for RTL8723DS. This repo is derived from Realtek Version
 v5.1.1.5_20523_20161209_BTCOEX20161208-1212. It has been modified to
 build cleanly for kernels through v5.9.
 
+
+**This repo is fork from `git clone https://github.com/lwfinger/rtl8723ds.git`.**
+**This repo is used for testing on `OpenWRT` and does not necessarily support production environments**
+
+
 Run the following commands in the Linux terminal.
 
 ```
-git clone https://github.com/lwfinger/rtl8723ds.git
-cd rtl8723ds
+git clone https://github.com/jerbe/driver_rtl8723ds.git
+cd driver_rtl8723ds
 make
 sudo make install
 sudo modprobe -v 8723ds
@@ -19,7 +24,7 @@ If you do not want two devices (station and an access point) separately, then fo
 
 Step - 1: Run the following commands in the Linux terminal. 
 ```
-git clone https://github.com/lwfinger/rtl8723ds.git
+git clone https://github.com/jerbe/driver_rtl8723ds.git
 cd rtl8723ds
 nano Makefile
 ```
